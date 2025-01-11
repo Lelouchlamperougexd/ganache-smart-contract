@@ -43,3 +43,14 @@ EtherWallet is a Solidity-based smart contract designed for secure storage and m
 
 3. ![alt text](image-2.png)
 ## Script Usage Example
+
+### Withdraw
+1. ![alt text](image-3.png)
+
+2. ![alt text](image-4.png)
+
+### Check balance
+1. ![alt text](image-5.png)
+
+### Ownwership
+1. ![alt text](image-6.png)
