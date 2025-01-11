@@ -32,3 +32,14 @@ EtherWallet is a Solidity-based smart contract designed for secure storage and m
 2. Install the required dependencies:
     ```bash
     npm install web3
+
+## Demo Screenshots
+
+
+## Contract Deployment in Remix
+1. ![alt text](image.png)
+
+2. ![alt text](image-1.png)
+
+3. ![alt text](image-2.png)
+## Script Usage Example
