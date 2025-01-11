@@ -1,7 +1,7 @@
 const Web3 = require('web3');
 const web3 = new Web3('http://127.0.0.1:7545');
 
-// Example: Check if connected
+// Check if connected
 web3.eth.getAccounts().then(console.log);
 
 const contractABI = [
@@ -47,8 +47,8 @@ const contractABI = [
 		"stateMutability": "payable",
 		"type": "receive"
 	}
-]; // Paste the ABI from Remix
-const contractAddress = '0xbc5f7da7298bda1ea79ad5358eb16a2d5e95a6b7'; // Replace with your contract address
+]; // ABI from Remix
+const contractAddress = '0xbc5f7da7298bda1ea79ad5358eb16a2d5e95a6b7'; // contract address
 
 const contract = new web3.eth.Contract(contractABI, contractAddress);
 
@@ -58,8 +58,8 @@ contract.methods.checkBalance().call()
         console.log("Contract Balance: ", balance);
     });
 
-// Withdraw (make sure to unlock your account in Ganache first)
-const account = '0xb737E4543Efb6E942F9d3B4b1935f4de81983E38'; // Replace with your Ganache account address
+// Withdraw 
+const account = '0xb737E4543Efb6E942F9d3B4b1935f4de81983E38'; // Ganache account address
 
 contract.methods.withdraw().send({ from: account })
     .then(receipt => {
